@@ -56,22 +56,20 @@ namespace LoginUniversidad
             char caracter;
             string password = "";
             int longPswd = 16;
-            int option;
             Random rnd = new Random();
-            while (longPswd > 0)
+
+            for (int i = 0; i < longPswd; i++)
             {
-                option = rnd.Next(0, 10);
-                if (option < 5)
+                if (i % 2 == 0)
                 {
                     caracter = letrasYNumeros[rnd.Next(letrasYNumeros.Length)];
                     password += caracter.ToString();
                 }
                 else
                 {
-                    caracter = letrasYNumeros[rnd.Next(caracteresEspeciales.Length)];
+                    caracter = caracteresEspeciales[rnd.Next(caracteresEspeciales.Length)];
                     password += caracter.ToString();
                 }
-                longPswd--;
             }
             txtBoxPswd1.Text = password;
             txtBoxPswd2.Text = password;
