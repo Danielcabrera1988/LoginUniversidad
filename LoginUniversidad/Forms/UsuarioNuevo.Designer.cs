@@ -46,12 +46,15 @@
             this.lblMsgError = new System.Windows.Forms.Label();
             this.btnAutoPswd = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.RBtnAlumno = new System.Windows.Forms.RadioButton();
+            this.RBtnProfesor = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(249, 203);
+            this.btnAceptar.Location = new System.Drawing.Point(291, 203);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 0;
@@ -61,7 +64,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(249, 247);
+            this.btnCancelar.Location = new System.Drawing.Point(291, 247);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 1;
@@ -84,7 +87,7 @@
             this.txtBoxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxName.Location = new System.Drawing.Point(224, 39);
             this.txtBoxName.Name = "txtBoxName";
-            this.txtBoxName.Size = new System.Drawing.Size(100, 16);
+            this.txtBoxName.Size = new System.Drawing.Size(142, 16);
             this.txtBoxName.TabIndex = 3;
             // 
             // txtBoxApellido
@@ -92,7 +95,7 @@
             this.txtBoxApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxApellido.Location = new System.Drawing.Point(224, 84);
             this.txtBoxApellido.Name = "txtBoxApellido";
-            this.txtBoxApellido.Size = new System.Drawing.Size(100, 16);
+            this.txtBoxApellido.Size = new System.Drawing.Size(142, 16);
             this.txtBoxApellido.TabIndex = 5;
             // 
             // lblLastName
@@ -110,7 +113,7 @@
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Location = new System.Drawing.Point(224, 128);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 16);
+            this.txtEmail.Size = new System.Drawing.Size(142, 16);
             this.txtEmail.TabIndex = 9;
             // 
             // lblEmail
@@ -128,7 +131,7 @@
             this.txtBoxNewUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxNewUser.Location = new System.Drawing.Point(108, 170);
             this.txtBoxNewUser.Name = "txtBoxNewUser";
-            this.txtBoxNewUser.Size = new System.Drawing.Size(100, 16);
+            this.txtBoxNewUser.Size = new System.Drawing.Size(142, 16);
             this.txtBoxNewUser.TabIndex = 13;
             // 
             // lblNameUser
@@ -146,7 +149,7 @@
             this.txtBoxPswd1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxPswd1.Location = new System.Drawing.Point(108, 207);
             this.txtBoxPswd1.Name = "txtBoxPswd1";
-            this.txtBoxPswd1.Size = new System.Drawing.Size(100, 16);
+            this.txtBoxPswd1.Size = new System.Drawing.Size(142, 16);
             this.txtBoxPswd1.TabIndex = 15;
             this.txtBoxPswd1.TextChanged += new System.EventHandler(this.txtBoxPswd1_TextChanged);
             // 
@@ -165,7 +168,7 @@
             this.txtBoxPswd2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxPswd2.Location = new System.Drawing.Point(108, 254);
             this.txtBoxPswd2.Name = "txtBoxPswd2";
-            this.txtBoxPswd2.Size = new System.Drawing.Size(100, 16);
+            this.txtBoxPswd2.Size = new System.Drawing.Size(142, 16);
             this.txtBoxPswd2.TabIndex = 17;
             this.txtBoxPswd2.TextChanged += new System.EventHandler(this.txtBoxPswd2_TextChanged);
             // 
@@ -194,7 +197,7 @@
             this.lblMsgError.AutoSize = true;
             this.lblMsgError.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMsgError.ForeColor = System.Drawing.Color.Red;
-            this.lblMsgError.Location = new System.Drawing.Point(18, 286);
+            this.lblMsgError.Location = new System.Drawing.Point(18, 313);
             this.lblMsgError.Name = "lblMsgError";
             this.lblMsgError.Size = new System.Drawing.Size(118, 16);
             this.lblMsgError.TabIndex = 21;
@@ -203,7 +206,7 @@
             // 
             // btnAutoPswd
             // 
-            this.btnAutoPswd.Location = new System.Drawing.Point(133, 227);
+            this.btnAutoPswd.Location = new System.Drawing.Point(175, 227);
             this.btnAutoPswd.Name = "btnAutoPswd";
             this.btnAutoPswd.Size = new System.Drawing.Size(75, 23);
             this.btnAutoPswd.TabIndex = 22;
@@ -222,13 +225,48 @@
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
+            // RBtnAlumno
+            // 
+            this.RBtnAlumno.AutoSize = true;
+            this.RBtnAlumno.Location = new System.Drawing.Point(205, 286);
+            this.RBtnAlumno.Name = "RBtnAlumno";
+            this.RBtnAlumno.Size = new System.Drawing.Size(68, 19);
+            this.RBtnAlumno.TabIndex = 24;
+            this.RBtnAlumno.TabStop = true;
+            this.RBtnAlumno.Text = "Alumno";
+            this.RBtnAlumno.UseVisualStyleBackColor = true;
+            // 
+            // RBtnProfesor
+            // 
+            this.RBtnProfesor.AutoSize = true;
+            this.RBtnProfesor.Location = new System.Drawing.Point(291, 286);
+            this.RBtnProfesor.Name = "RBtnProfesor";
+            this.RBtnProfesor.Size = new System.Drawing.Size(69, 19);
+            this.RBtnProfesor.TabIndex = 25;
+            this.RBtnProfesor.TabStop = true;
+            this.RBtnProfesor.Text = "Profesor";
+            this.RBtnProfesor.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(18, 285);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 17);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Seleccione una opcion";
+            // 
             // UsuarioNuevo
             // 
             this.AcceptButton = this.btnAceptar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(350, 311);
+            this.ClientSize = new System.Drawing.Size(394, 345);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.RBtnProfesor);
+            this.Controls.Add(this.RBtnAlumno);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnAutoPswd);
             this.Controls.Add(this.lblMsgError);
@@ -277,5 +315,8 @@
         private System.Windows.Forms.Label lblMsgError;
         private System.Windows.Forms.Button btnAutoPswd;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.RadioButton RBtnAlumno;
+        private System.Windows.Forms.RadioButton RBtnProfesor;
+        private System.Windows.Forms.Label label1;
     }
 }

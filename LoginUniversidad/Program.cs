@@ -17,7 +17,7 @@ namespace LoginUniversidad
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new F1Login());
+            Application.Run(new FormLogin());
         }
     }
 }
